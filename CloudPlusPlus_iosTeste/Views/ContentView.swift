@@ -24,6 +24,7 @@ struct ContentView: View {
             }
             .navigationTitle("Forms")
             .onAppear {
+                // requisição para capturar os dados da tabela forms
                 forms = dbManager.fetchForms()
                 print("forms.count v2: \(forms.count)")
             }

@@ -34,7 +34,7 @@ class DatabaseManager: ObservableObject {
     }
     
     func createTables() {
-        // tabela 'forms' que irão armazenar o conteudo do JSON
+        // tabela 'forms' que irá armazenar o conteudo do JSON
         let createFormsTable = """
         CREATE TABLE IF NOT EXISTS forms (
           uuid TEXT PRIMARY KEY,
